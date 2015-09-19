@@ -17,6 +17,9 @@
         <Description xml:lang="en">python-qt4 are the python2 bindings for Qt4.
 </Description>
         <PartOf>programming.python</PartOf>
+        <RuntimeDependencies>
+            <Dependency>python-sip</Dependency>
+        </RuntimeDependencies>
         <Files>
             <Path fileType="data">/usr/share/qt4</Path>
             <Path fileType="data">/usr/share/sip</Path>
@@ -26,7 +29,7 @@
         </Files>
     </Package>
     <History>
-        <Update release="2">
+        <Update release="3">
             <Date>2015-09-19</Date>
             <Version>4.11.4</Version>
             <Comment>Packaging update</Comment>
