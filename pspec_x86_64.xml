@@ -19,13 +19,15 @@
         <PartOf>programming.python</PartOf>
         <Files>
             <Path fileType="data">/usr/share/qt4</Path>
+            <Path fileType="data">/usr/share/sip</Path>
             <Path fileType="executable">/usr/bin</Path>
             <Path fileType="library">/usr/lib/python2.7</Path>
+            <Path fileType="library">/usr/lib64/qt4</Path>
         </Files>
     </Package>
     <History>
-        <Update release="1">
-            <Date>2015-09-14</Date>
+        <Update release="2">
+            <Date>2015-09-19</Date>
             <Version>4.11.4</Version>
             <Comment>Packaging update</Comment>
             <Name>Joshua Strobl</Name>
