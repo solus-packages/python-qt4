@@ -1,8 +1,8 @@
 name       : python-qt4
-version    : 4.11.4
-release    : 5
+version    : '4.12'
+release    : 6
 source     :
-    - http://netcologne.dl.sourceforge.net/project/pyqt/PyQt4/PyQt-4.11.4/PyQt-x11-gpl-4.11.4.tar.gz : fc1fe77495432ba3b0d74ff5cb164d375a97f5dddb728256330f615a7cdcf407
+    - https://pilotfiber.dl.sourceforge.net/project/pyqt/PyQt4/PyQt-4.12/PyQt4_gpl_x11-4.12.tar.gz : 3c1d4b55314adb3e1132de8fc2a92eed216d37e58aceed41294dbca210ca88db
 license    : GPL-3.0
 component  : programming.python
 summary    : python-qt4 are the python2 bindings for Qt4.
@@ -19,7 +19,7 @@ rundeps    :
 setup      : |
     python2 configure-ng.py --confirm-license --no-sip-files --qsci-api -q /usr/bin/qmake-qt4
 build      : |
-    ln -s /usr/bin/moc-qt4 /usr/bin/moc
+    sed -i "s|/usr/bin/moc|/usr/bin/moc-qt4|g" ./*/Makefile
     %make
 install    : |
     %make_install INSTALL_ROOT="$installdir"

@@ -2,8 +2,8 @@
     <Source>
         <Name>python-qt4</Name>
         <Packager>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>programming.python</PartOf>
@@ -601,12 +601,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="5">
+        <Update release="6">
             <Date>2016-08-08</Date>
-            <Version>4.11.4</Version>
+            <Version>4.12</Version>
             <Comment>Packaging update</Comment>
-            <Name>Joshua Strobl</Name>
-            <Email>joshua@stroblindustries.com</Email>
+            <Name>Bryan T. Meyers</Name>
+            <Email>bmeyers@datadrake.com</Email>
         </Update>
     </History>
 </PISI>
