@@ -1,8 +1,8 @@
 name       : python-qt4
-version    : '4.12'
-release    : 6
+version    : 4.12.1
+release    : 7
 source     :
-    - https://pilotfiber.dl.sourceforge.net/project/pyqt/PyQt4/PyQt-4.12/PyQt4_gpl_x11-4.12.tar.gz : 3c1d4b55314adb3e1132de8fc2a92eed216d37e58aceed41294dbca210ca88db
+    - https://netcologne.dl.sourceforge.net/project/pyqt/PyQt4/PyQt-4.12.1/PyQt4_gpl_x11-4.12.1.tar.gz : 45d724461ae58b019b9be95076ca07e212eb73084aec9125bb254825c3a05383
 license    : GPL-3.0
 component  : programming.python
 summary    : python-qt4 are the python2 bindings for Qt4.
@@ -11,13 +11,17 @@ description: |
 builddeps  :
     - pkgconfig(dbus-python)
     - pkgconfig(gl)
-    - pkgconfig(python-2.7)
+    - pkgconfig(harfbuzz)
     - pkgconfig(QtGui)
     - python-sip-devel
 rundeps    :
     - python-sip
 setup      : |
-    python2 configure-ng.py --confirm-license --no-sip-files --qsci-api -q /usr/bin/qmake-qt4
+    python2 configure-ng.py --confirm-license \
+        --no-sip-files \
+        --qsci-api \
+        -q /usr/bin/qmake-qt4 \
+        CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LFLAGS="$LDFLAGS"
 build      : |
     sed -i "s|/usr/bin/moc|/usr/bin/moc-qt4|g" ./*/Makefile
     %make
