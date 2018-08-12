@@ -2,8 +2,8 @@
     <Source>
         <Name>python-qt4</Name>
         <Packager>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Packager>
         <License>GPL-3.0</License>
         <PartOf>programming.python</PartOf>
@@ -19,7 +19,9 @@
 </Description>
         <PartOf>programming.python</PartOf>
         <Files>
-            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="executable">/usr/bin/pylupdate4</Path>
+            <Path fileType="executable">/usr/bin/pyrcc4</Path>
+            <Path fileType="executable">/usr/bin/python2-pyuic4</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/PyQt4/Qt.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/PyQt4/QtCore.so</Path>
             <Path fileType="library">/usr/lib/python2.7/site-packages/PyQt4/QtDBus.so</Path>
@@ -601,12 +603,12 @@
         </Files>
     </Package>
     <History>
-        <Update release="7">
-            <Date>2017-11-16</Date>
+        <Update release="8">
+            <Date>2018-07-29</Date>
             <Version>4.12.1</Version>
             <Comment>Packaging update</Comment>
-            <Name>Pierre-Yves</Name>
-            <Email>pyu@riseup.net</Email>
+            <Name>Joey Riches</Name>
+            <Email>josephriches@gmail.com</Email>
         </Update>
     </History>
 </PISI>
